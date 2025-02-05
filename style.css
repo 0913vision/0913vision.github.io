@@ -1,0 +1,93 @@
+/* Reset default styles */
+
+:root {
+    --primary-color: #624094;
+    --font-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #fff;
+    color: var(--font-color);
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header: Darker orange background, slim padding, right-aligned text */
+  .site-header {
+    background-color: var(--primary-color); 
+    color: #fff;
+    text-align: right;
+    padding: 10px 20px; /* Minimal vertical padding */
+    margin: 0;
+  }
+  
+  .site-header h1 {
+    font-size: 1.5em;
+    line-height: 1.1;
+    margin: 0;
+  }
+  
+  /* Profile section styling */
+  .intro .profile {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .intro .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .intro .profile .info h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  /* Section headings */
+  section h3 {
+    color: var(--primary-color);
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #624094;
+    padding-bottom: 5px;
+  }
+  
+  /* Link styling */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* 이미지 스타일: 컨테이너 크기에 맞게 확대, 비율 유지 */
+  .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* 이미지 비율 유지하면서 컨테이너 전체를 덮음 */
+    display: block;
+  }
