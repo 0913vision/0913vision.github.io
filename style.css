@@ -91,3 +91,11 @@
     object-fit: cover;  /* 이미지 비율 유지하면서 컨테이너 전체를 덮음 */
     display: block;
   }
+
+  #accept {
+    color: green;
+  }
+
+  #revision {
+    color: red;
+  }
